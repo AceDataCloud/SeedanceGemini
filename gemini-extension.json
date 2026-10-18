@@ -1,0 +1,31 @@
+{
+  "name": "seedance-by-ace-data-cloud",
+  "version": "0.1.0",
+  "description": "Seedance video generation and editing via Ace Data Cloud, with native Token setup and same-task results. Independent integration, not an official service product.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "seedance-by-ace-data-cloud": {
+      "httpUrl": "https://seedance.mcp.acedata.cloud/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ACEDATACLOUD_SEEDANCE_TOKEN}"
+      },
+      "includeTools": [
+        "seedance_list_models",
+        "seedance_list_resolutions",
+        "seedance_list_actions",
+        "seedance_generate_video",
+        "seedance_generate_video_from_image",
+        "seedance_get_task",
+        "seedance_get_tasks_batch"
+      ]
+    }
+  },
+  "settings": [
+    {
+      "name": "Ace Data Cloud Seedance API Token",
+      "description": "Sign in or register at https://platform.acedata.cloud/console/applications?utm_source=gemini-cli&utm_medium=referral&utm_campaign=evergreen&utm_content=seedancegemini_install_token . Open General application, copy or create a service Key with Seedance access. Paste the raw token without Bearer. Check permissions, balance and price before generation.",
+      "envVar": "ACEDATACLOUD_SEEDANCE_TOKEN",
+      "sensitive": true
+    }
+  ]
+}
