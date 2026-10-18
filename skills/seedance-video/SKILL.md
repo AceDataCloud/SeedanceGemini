@@ -1,6 +1,6 @@
 ---
 name: seedance-video
-description: Create or edit Seedance video through Ace Data Cloud in Gemini CLI, or retrieve an original task result. Use the installed Seedance MCP tools and current service schema, not model-provider configuration.
+description: Generate Seedance video from text, images or multimodal references through Ace Data Cloud in Gemini CLI, or retrieve an original task result. Use the installed Seedance MCP tools and current service schema, not model-provider configuration.
 ---
 
 # Seedance with Ace Data Cloud
@@ -21,7 +21,7 @@ Inspect current tool schemas and current price before a paid operation. Ask only
 
 ## Submit once, retrieve the original task
 
-1. Submit the chosen authorized generation/edit once and retain its task ID and any original trace ID.
+1. Submit the chosen authorized generation once and retain its task ID and any original trace ID.
 2. Query `seedance_get_task` with **`task_id`**, using the original ID. Never use a generation tool for polling. Honor the server's pacing and state fields.
 3. Keep pending/processing distinct from terminal complete/failed. If a bounded wait or network call times out, retain the same ID for a later lookup; do not resubmit automatically.
 4. On terminal success, show the actual video URLs and metadata. On failure, preserve the returned error/ID. A task ID or successful CLI turn is not a completed artifact or proof of unique billing.

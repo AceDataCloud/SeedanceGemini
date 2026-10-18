@@ -1,6 +1,6 @@
 # Seedance by Ace Data Cloud for Gemini CLI
 
-Use Seedance video generation/editing and retrieve the original task from Gemini CLI. **Ace Data Cloud** provides this independent integration; it is not an official Seedance or Google product and does not add a main-model provider.
+Use Seedance text-to-video and image or multimodal-reference video generation, then retrieve the original task from Gemini CLI. **Ace Data Cloud** provides this independent integration; it is not an official Seedance or Google product and does not add a main-model provider.
 
 [简体中文](readme/README_zh_Hans.md) · [Current price](https://platform.acedata.cloud/models?utm_source=gemini-cli&utm_medium=referral&utm_campaign=evergreen&utm_content=seedancegemini_pricing)
 
@@ -30,7 +30,7 @@ gemini extensions install https://github.com/AceDataCloud/SeedanceGemini
 
 ![Copy an existing masked Ace Key or manage keys](_assets/tutorial/get-api-key-en.png)
 
-4. Review expiration, usage limits and Allowed APIs. This workflow uses `/seedance/videos`, `/seedance/tasks`. Allow only needed routes. Review [current pricing](https://platform.acedata.cloud/models?utm_source=gemini-cli&utm_medium=referral&utm_campaign=evergreen&utm_content=seedancegemini_before_run) before a generation/edit.
+4. Review expiration, usage limits and Allowed APIs. This workflow uses `/seedance/videos`, `/seedance/tasks`. Allow only needed routes. Review [current pricing](https://platform.acedata.cloud/models?utm_source=gemini-cli&utm_medium=referral&utm_campaign=evergreen&utm_content=seedancegemini_before_run) before a generation.
 
 ![Create an optional dedicated Key](_assets/tutorial/create-api-key-en.png)
 
@@ -75,7 +75,9 @@ For an already-submitted task:
 /seedance-task YOUR_ORIGINAL_TASK_ID
 ```
 
-This command retrieves that ID only. No generation/edit or fabricated ID is needed. Show actual returned video URLs and terminal state; verify media and the matching consumption record separately. A connected server, task ID or green CLI turn does not prove a completed image/video, unique bill or revenue.
+This command retrieves that ID only. No new generation or fabricated ID is needed. Show actual returned video URLs and terminal state; verify media and the matching consumption record separately. A connected server, task ID or green CLI turn does not prove a completed image/video, unique bill or revenue.
+
+This extension exposes the two generation tools listed below; it does not add dedicated video editing or extension tools.
 
 ## Exposed tools
 

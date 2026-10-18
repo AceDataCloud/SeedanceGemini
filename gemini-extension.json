@@ -1,7 +1,7 @@
 {
   "name": "seedance-by-ace-data-cloud",
   "version": "0.1.0",
-  "description": "Seedance video generation and editing via Ace Data Cloud, with native Token setup and same-task results. Independent integration, not an official service product.",
+  "description": "Seedance text-to-video and image or multimodal-reference video generation via Ace Data Cloud, with native Token setup and same-task results. Independent integration, not an official service product.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "seedance-by-ace-data-cloud": {

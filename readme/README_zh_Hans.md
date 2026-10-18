@@ -75,6 +75,8 @@ gemini mcp list
 
 只查该ID，勿造ID或新发生成。返回实际视频URL/状态，再分别核媒体与同请求消费记录；连接、任务ID、绿色回合不证明结果/唯一账单或收入。
 
+本扩展只开放下面两项视频生成工具，不额外提供独立视频编辑或续写工具。
+
 ## 工具范围
 
 `seedance_list_models`, `seedance_list_resolutions`, `seedance_list_actions`, `seedance_generate_video`, `seedance_generate_video_from_image`, `seedance_get_task`, `seedance_get_tasks_batch`。
