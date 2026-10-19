@@ -1,0 +1,4 @@
+description = "Check Seedance setup without creating media"
+prompt = """
+Activate the seedance-video skill. Call only seedance_list_models on seedance-by-ace-data-cloud and summarize the reference result. Do not generate or edit video, query tasks, or infer balance.
+"""
