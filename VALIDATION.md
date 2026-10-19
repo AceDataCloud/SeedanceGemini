@@ -15,3 +15,8 @@ Five package/schema/command/attribution checks and Skill validation passed. Offi
 ## Executed hosted check (2026-10-18)
 
 Native install/password/encrypted storage/list/Skill/check-command/uninstall passed against the real hosted endpoint. Only the static seedance_list_models reference tool was called. Model responses were deterministic localhost fixtures, not paid inference. No media generated or fabricated task queried.
+
+
+## Stable publication, 2026-10-19
+
+The initial implementation PR is merged under the owner's current merge/release authorization. Previously recorded review-commit/local/hosted checks remain historical evidence, not a claim that every released artifact has been rechecked. The release verifier installs both v0.1.0 and the unpinned ordinary command from GitHub, reads actual install metadata/version/bundled files, lists and uninstalls without a Token or any model/media request. It checks installed files against the exact release commit. The stable verification result is attached to its Actions run after publication. Official gallery search remains a distinct indexing gate.

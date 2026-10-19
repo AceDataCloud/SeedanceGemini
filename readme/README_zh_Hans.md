@@ -8,19 +8,21 @@
 
 先安装[官方 Gemini CLI](https://geminicli.com/docs/get-started/installation/)并完成当前模型登录；本包验证 **0.64.0**。Google 已将部分免费/Google One 用户引导到 [Antigravity CLI](https://github.com/google-gemini/gemini-cli#readme)，本包不承诺其兼容。
 
-manifest 名为 **seedance-by-ace-data-cloud**，来源 **AceDataCloud/SeedanceGemini**。目前是审阅包，尚未被官方目录收录；main 合并前使用实现分支：
-
-```bash
-gemini extensions install https://github.com/AceDataCloud/SeedanceGemini --ref codex/seedance-native-extension
-```
-
-阅读原生授权提示。它加载 Seedance MCP、`seedance-video`、`/seedance-check`、`/seedance-task`，不安装本地服务、没有hooks，不自动生成媒体。
-
-正式审阅合并后才使用普通安装：
+扩展名称 **seedance-by-ace-data-cloud**，发布者 **AceDataCloud/SeedanceGemini**。从公开仓直接安装正式版本：
 
 ```bash
 gemini extensions install https://github.com/AceDataCloud/SeedanceGemini
 ```
+
+需要固定版本时指定 **v0.1.0**：
+
+```bash
+gemini extensions install https://github.com/AceDataCloud/SeedanceGemini --ref v0.1.0
+```
+
+[版本发布](https://github.com/AceDataCloud/SeedanceGemini/releases/tag/v0.1.0) · [官方目录](https://geminicli.com/extensions/)。目录每日索引与源码/包发布分开，发布和安装成功不代表搜索卡片已经出现。
+
+阅读原生授权提示。它加载 Seedance MCP、`seedance-video`、`/seedance-check`、`/seedance-task`，不安装本地服务、没有hooks，不自动生成媒体。
 
 ## 2. 注册登录并取 Token
 
