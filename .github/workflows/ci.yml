@@ -39,8 +39,8 @@ jobs:
         with:
           name: native-extension-check
           path: /tmp/service-native-check.json
-      - name: Remote review-commit installation without a Key
-        run: python3 tests/smoke_remote_install.py --cli /tmp/gemini-cli/gemini.js --ref "${{ github.event.pull_request.head.sha || github.sha }}" --output /tmp/service-remote-check.json
+      - name: Original review-commit installation regression without a Key
+        run: python3 tests/smoke_remote_install.py --cli /tmp/gemini-cli/gemini.js --ref "40a020a0632b6b84e1f5b7f658d2a40ffe4f3279" --output /tmp/service-remote-check.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:

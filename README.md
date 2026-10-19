@@ -8,19 +8,21 @@ Use Seedance text-to-video and image or multimodal-reference video generation, t
 
 Install [Google Gemini CLI](https://geminicli.com/docs/get-started/installation/) and complete its current main-model authentication. Tested version: **0.64.0**. Google directs some unpaid/Google One users to [Antigravity CLI](https://github.com/google-gemini/gemini-cli#readme); this package does not claim Antigravity compatibility.
 
-This is an independent native extension, with manifest ID **seedance-by-ace-data-cloud** and publisher **AceDataCloud/SeedanceGemini**. The official gallery crawls public root manifests with `gemini-cli-extension` topics; **this review package is not yet an indexed official card**. Main remains initialization until review/authorized merge. Install the review branch explicitly:
-
-```bash
-gemini extensions install https://github.com/AceDataCloud/SeedanceGemini --ref codex/seedance-native-extension
-```
-
-Read the native consent prompt. The extension adds only Seedance MCP tools, the `seedance-video` Skill and `/seedance-check`, `/seedance-task`. No hooks, local server install or automatic media generation.
-
-After a reviewed stable merge, the ordinary command will be:
+This independent native extension uses manifest ID **seedance-by-ace-data-cloud** and publisher **AceDataCloud/SeedanceGemini**. Install the release from its public repository:
 
 ```bash
 gemini extensions install https://github.com/AceDataCloud/SeedanceGemini
 ```
+
+Pin version **v0.1.0** when you need a reproducible install:
+
+```bash
+gemini extensions install https://github.com/AceDataCloud/SeedanceGemini --ref v0.1.0
+```
+
+[Versioned release](https://github.com/AceDataCloud/SeedanceGemini/releases/tag/v0.1.0) · [Official gallery](https://geminicli.com/extensions/). Gallery indexing is a separate daily process; published source/release and passing installation do not prove a search card is present.
+
+Read the native consent prompt. The extension adds only Seedance MCP tools, the `seedance-video` Skill and `/seedance-check`, `/seedance-task`. No hooks, local server install or automatic media generation.
 
 ## 2. Register/sign in and get a service Token
 
